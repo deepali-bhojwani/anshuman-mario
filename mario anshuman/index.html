@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon-mario.ico" type="image/x-icon">
+    <title>Game Mario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <div class="game-board">
+            <p id="text-score">0</p>
+            <img class="clouds clouds-animation-1" src="assets/clouds.png" alt="clouds-image">
+            <img class="mario" src="assets/mario.gif" alt="mario-gif" id="mario">
+            <img class="mario-lose" src="assets/game-over.png" alt="game-over" id="mario-lose">
+            <img class="pipe animation-pipe-1" src="assets/pipe.png" alt="pipe-image">
+        </div>
+        <div class="container-grama">
+            <div class="grama">
+            </div>
+        </div>
+        <div class="container-chao">
+            <img class="chao-1 animation-chao1-1" src="assets/chao.png" alt="chao-image">
+            <img class="chao-2 animation-chao2-1" src="assets/chao.png" alt="chao-image">
+        </div>
+    </div>
+    <img id='frame' src="assets/widescreen.png" alt="frame">
+    <div class="card card-inicial">
+        <img src="assets/super-mario-logo.png" alt="logo" class="logo-supermario">
+        <p class="text-card">Tap the key or screen to jump</p>
+        <button type="button" onclick="reloadFrame()">PLAY</button>
+    </div>
+    <div class="card card-normal">
+        <img src="assets/super-mario-logo.png" alt="logo" class="logo-supermario">
+        <p class="text-card record-score">Record score: 0</p>
+        <p class="text-card last-score">Last score: 0</p>
+        <button type="button" onclick="reloadFrame()">PLAY</button>
+    </div>
+    <div class="card card-new-record">
+        <img src="assets/super-mario-logo.png" alt="logo" class="logo-supermario">
+        <p class="text-card" id="new-record">New Record: 0</p>
+        <button type="button" onclick="reloadFrame()">PLAY</button>
+        <div class="container-mario-win">
+            <img src="assets/mario-win.png" alt="win" id="mario-win">
+        </div>
+    </div>
+</body>
+
+</html>

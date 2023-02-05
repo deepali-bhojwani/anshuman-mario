@@ -1,0 +1,248 @@
+@mixin animation-velocity($name, $duration, $timing, $iteration) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+}
+
+@font-face {
+    font-family: "super-mario";
+    src: url("/assets/Super-Mario-World.ttf") format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background-color: #ffe7b5;
+    background-image: url('/assets/background.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img#frame {
+    position: absolute;
+    width: 1092px;
+    pointer-events: none;
+}
+
+.game-board {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+#text-score {
+    font-family: 'super-mario';
+    text-shadow: 3px 3px 2px black;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.card {
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.card-normal {
+    display: none;
+}
+
+.card-new-record {
+    display: none;
+}
+
+.logo-supermario {
+    width: 500px;
+}
+
+.text-card {
+    font-family: 'super-mario';
+    font-size: 20px;
+    margin-top: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.clouds {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.mario {
+    position: absolute;
+    width: 150px;
+    bottom: 0px;
+    color: 120;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.container-grama {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.grama {
+    height: 10px;
+    background: linear-gradient(to top, #006e3d 10%, #007B44 20%, #01C601);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    height: 80px;
+    left: -80px;
+    animation-delay: 1s;
+}
+
+.container-chao {
+    width: 1000px;
+    height: 26px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.chao-1 {
+    position: absolute;
+    bottom: 0px;
+}
+
+.chao-2 {
+    position: absolute;
+    bottom: 0px;
+}
+
+.container-mario-win {
+    display: flex;
+    justify-content: center;
+}
+
+#mario-win {
+    width: 75px;
+    height: 124px;
+}
+
+#mario-lose {
+    position: absolute;
+    width: 75px;
+    margin-left: 50px;
+    bottom: 0px;
+    display: none;
+}
+
+button {
+    margin-top: 37px;
+    text-shadow: 2px 2px 2px black;
+    color: #fff;
+    font-family: "super-mario";
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        background-image: none;
+        background-size: none;
+    }
+
+    img#frame {
+        display: none;
+    }
+
+    #text-score {
+        text-shadow: 2px 2px 2px black;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .game-board {
+        width: 100vw;
+        max-height: 90vh;
+    }
+
+    .clouds {
+        width: 300px;
+    }
+
+    .mario {
+        width: 100px;
+    }
+
+    .container-grama {
+        width: 100vw;
+    }
+
+    .pipe {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container-chao {
+        width: 100vw;
+        height: 26px;
+    }
+
+    .logo-supermario {
+        width: 300px;
+    }
+
+    .card {
+        width: 300px;
+        height: 320px;
+    }
+
+    .text-card {
+        font-size: 15px;
+    }
+
+    button {
+        margin-top: 16px;
+        font-size: 25px;
+    }
+
+    #mario-win {
+        margin-top: 9px;
+        width: 50px;
+        height: 75px;
+        bottom: 0px;
+    }
+
+    #mario-lose {
+        width: 50px;
+        height: 75px;
+        margin-left: 35px;
+        position: absolute;
+    }
+
+}

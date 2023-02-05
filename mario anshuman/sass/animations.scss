@@ -1,0 +1,392 @@
+//[VELOCIDADE NUVEM]
+.clouds-animation-1 {
+    @include animation-velocity(clouds-animation-1, 20000ms, linear, infinite)
+}
+
+.clouds-animation-2 {
+    @include animation-velocity(clouds-animation-2, 18000ms, linear, infinite)
+}
+
+.clouds-animation-3 {
+    @include animation-velocity(clouds-animation-3, 16000ms, linear, infinite)
+}
+
+.clouds-animation-4 {
+    @include animation-velocity(clouds-animation-4, 14000ms, linear, infinite)
+}
+
+.clouds-animation-5 {
+    @include animation-velocity(clouds-animation-5, 12000ms, linear, infinite)
+}
+
+
+//[VELOCIDADE PIPE]
+.animation-pipe-1 {
+    @include animation-velocity(pipe-animation-1, 2000ms, linear, infinite);
+}
+
+.animation-pipe-2 {
+    @include animation-velocity(pipe-animation-2, 1900ms, linear, infinite)
+}
+
+.animation-pipe-3 {
+    @include animation-velocity(pipe-animation-3, 1800ms, linear, infinite)
+}
+
+.animation-pipe-4 {
+    @include animation-velocity(pipe-animation-4, 1700ms, linear, infinite)
+}
+
+.animation-pipe-5 {
+    @include animation-velocity(pipe-animation-5, 1600ms, linear, infinite)
+}
+
+.animation-pipe-6 {
+    @include animation-velocity(pipe-animation-6, 1500ms, linear, infinite)
+}
+
+.animation-pipe-7 {
+    @include animation-velocity(pipe-animation-7, 1400ms, linear, infinite)
+}
+
+.animation-pipe-8 {
+    @include animation-velocity(pipe-animation-8, 1300ms, linear, infinite)
+}
+
+.animation-pipe-9 {
+    @include animation-velocity(pipe-animation-9, 1250ms, linear, infinite)
+}
+
+.animation-pipe-10 {
+    @include animation-velocity(pipe-animation-9, 1200ms, linear, infinite)
+}
+
+.animation-pipe-11 {
+    @include animation-velocity(pipe-animation-10, 1100ms, linear, infinite)
+}
+
+
+// [VELOCIDADE CHAO]
+
+//velocidade 1
+.animation-chao1-1 {
+    @include animation-velocity(chao1-animation-1, 1650ms, linear, infinite)
+}
+
+.animation-chao2-1 {
+    @include animation-velocity(chao2-animation-1, 1650ms, linear, infinite)
+}
+
+//velocidade 2
+.animation-chao1-2 {
+    @include animation-velocity(chao1-animation-1, 1550ms, linear, infinite)
+}
+
+.animation-chao2-2 {
+    @include animation-velocity(chao2-animation-1, 1550ms, linear, infinite)
+}
+
+//velocidade 3
+.animation-chao1-3 {
+    @include animation-velocity(chao1-animation-1, 1050ms, linear, infinite)
+}
+
+.animation-chao2-3 {
+    @include animation-velocity(chao2-animation-1, 1050ms, linear, infinite)
+}
+
+//velocidade 4
+.animation-chao1-4 {
+    @include animation-velocity(chao1-animation-1, 990ms, linear, infinite)
+}
+
+.animation-chao2-4 {
+    @include animation-velocity(chao2-animation-1, 990ms, linear, infinite)
+}
+
+//velocidade 5
+.animation-chao1-5 {
+    @include animation-velocity(chao1-animation-1, 720ms, linear, infinite)
+}
+
+.animation-chao2-5 {
+    @include animation-velocity(chao2-animation-1, 720ms, linear, infinite)
+}
+
+//velocidade 6
+.animation-chao1-6 {
+    @include animation-velocity(chao1-animation-1, 680ms, linear, infinite)
+}
+
+.animation-chao2-6 {
+    @include animation-velocity(chao2-animation-1, 680ms, linear, infinite)
+}
+
+//velocidade 7
+.animation-chao1-7 {
+    @include animation-velocity(chao1-animation-1, 600ms, linear, infinite)
+}
+
+.animation-chao2-7 {
+    @include animation-velocity(chao2-animation-1, 600ms, linear, infinite)
+}
+
+//velocidade 8
+.animation-chao1-8 {
+    @include animation-velocity(chao1-animation-1, 550ms, linear, infinite)
+}
+
+.animation-chao2-8 {
+    @include animation-velocity(chao2-animation-1, 550ms, linear, infinite)
+}
+
+//velocidade 9
+.animation-chao1-9 {
+    @include animation-velocity(chao1-animation-1, 500ms, linear, infinite)
+}
+
+.animation-chao2-9 {
+    @include animation-velocity(chao2-animation-1, 500ms, linear, infinite)
+}
+
+//velocidade 10
+.animation-chao1-10 {
+    @include animation-velocity(chao1-animation-1, 450ms, linear, infinite)
+}
+
+.animation-chao2-10 {
+    @include animation-velocity(chao2-animation-1, 450ms, linear, infinite)
+}
+
+//velocidade 11
+.animation-chao1-11 {
+    @include animation-velocity(chao1-animation-1, 400ms, linear, infinite)
+}
+
+.animation-chao2-11 {
+    @include animation-velocity(chao2-animation-1, 400ms, linear, infinite)
+}
+
+
+
+// [Animação chao]
+@keyframes chao1-animation-1 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes chao2-animation-1 {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+//[Animação cano]
+
+@keyframes pipe-animation-1 {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-2 {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-3 {
+    0% {
+        left: 150%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-4 {
+    0% {
+        left: 150%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-5 {
+    0% {
+        left: 200%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-6 {
+    0% {
+        left: 200%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-7 {
+    0% {
+        left: 250%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-8 {
+    0% {
+        left: 250%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-9 {
+    0% {
+        left: 300%;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes pipe-animation-10 {
+    0% {
+        left: 350%;
+    }
+
+    100% {
+        left: -300px;
+    }
+}
+
+// [Animação pulo]
+@keyframes jump {
+    0% {
+        bottom: 0px;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+//[Animação nuvens]
+@keyframes clouds-animation-1 {
+    from {
+        right: -600px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation-2 {
+    from {
+        right: -650px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation-3 {
+    from {
+        right: -700px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation-4 {
+    from {
+        right: -750px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation-4 {
+    from {
+        right: -800px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@media (max-width:1000px) {
+
+    @keyframes jump {
+        0% {
+            bottom: 0px;
+        }
+
+        40% {
+            bottom: 130px;
+        }
+
+        50% {
+            bottom: 130px;
+        }
+
+        60% {
+            bottom: 130px;
+        }
+
+        100% {
+            bottom: 0px;
+        }
+    }
+}
